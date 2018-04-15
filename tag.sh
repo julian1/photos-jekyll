@@ -12,9 +12,9 @@ grep -r '/public/images/' _posts/ | sed 's/.*\(public\/images\/.*\)).*/\1/' |  w
 
   echo "$i"
 
-  # exiftool -artist="Julian Atkinson" -copyright="2018 Julian Atkinson"   "$i"
+  exiftool -artist="Julian Atkinson" -copyright="2018 Julian Atkinson"   "$i"
 
-  git add $i
+  git  add $i
 
 
 done
